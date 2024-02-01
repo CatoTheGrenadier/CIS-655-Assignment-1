@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28725C262B6C009B00F6DE36 /* SongMyung-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28725C242B6C009B00F6DE36 /* SongMyung-Regular.ttf */; };
+		28725C272B6C009B00F6DE36 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 28725C252B6C009B00F6DE36 /* OFL.txt */; };
+		28725C2A2B6C037400F6DE36 /* BreeSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28725C292B6C037400F6DE36 /* BreeSerif-Regular.ttf */; };
 		28A295202B6A9BCA001882F6 /* Assignment_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A2951F2B6A9BCA001882F6 /* Assignment_1App.swift */; };
 		28A295222B6A9BCA001882F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A295212B6A9BCA001882F6 /* ContentView.swift */; };
 		28A295242B6A9BCC001882F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A295232B6A9BCC001882F6 /* Assets.xcassets */; };
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28725C242B6C009B00F6DE36 /* SongMyung-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SongMyung-Regular.ttf"; path = "custom-fonts/SongMyung-Regular.ttf"; sourceTree = "<group>"; };
+		28725C252B6C009B00F6DE36 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = OFL.txt; path = "custom-fonts/OFL.txt"; sourceTree = "<group>"; };
+		28725C282B6C011D00F6DE36 /* Assignment-1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Assignment-1-Info.plist"; sourceTree = SOURCE_ROOT; };
+		28725C292B6C037400F6DE36 /* BreeSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BreeSerif-Regular.ttf"; path = "../../../../../Downloads/Bree_Serif/BreeSerif-Regular.ttf"; sourceTree = "<group>"; };
 		28A2951C2B6A9BCA001882F6 /* Assignment_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A2951F2B6A9BCA001882F6 /* Assignment_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_1App.swift; sourceTree = "<group>"; };
 		28A295212B6A9BCA001882F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,8 +102,12 @@
 		28A2951E2B6A9BCA001882F6 /* Assignment_1 */ = {
 			isa = PBXGroup;
 			children = (
+				28725C282B6C011D00F6DE36 /* Assignment-1-Info.plist */,
 				28A2951F2B6A9BCA001882F6 /* Assignment_1App.swift */,
+				28725C252B6C009B00F6DE36 /* OFL.txt */,
+				28725C242B6C009B00F6DE36 /* SongMyung-Regular.ttf */,
 				28A295212B6A9BCA001882F6 /* ContentView.swift */,
+				28725C292B6C037400F6DE36 /* BreeSerif-Regular.ttf */,
 				28A295232B6A9BCC001882F6 /* Assets.xcassets */,
 				28A295252B6A9BCC001882F6 /* Assignment_1.entitlements */,
 				28A295262B6A9BCC001882F6 /* Preview Content */,
@@ -235,6 +246,9 @@
 			files = (
 				28A295282B6A9BCC001882F6 /* Preview Assets.xcassets in Resources */,
 				28A295242B6A9BCC001882F6 /* Assets.xcassets in Resources */,
+				28725C272B6C009B00F6DE36 /* OFL.txt in Resources */,
+				28725C2A2B6C037400F6DE36 /* BreeSerif-Regular.ttf in Resources */,
+				28725C262B6C009B00F6DE36 /* SongMyung-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +436,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment_1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Assignment-1-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -458,6 +473,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment_1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Assignment-1-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

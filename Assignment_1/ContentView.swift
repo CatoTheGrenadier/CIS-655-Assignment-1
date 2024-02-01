@@ -15,66 +15,78 @@ struct numberGame: View {
             Text("")
                 .padding(10)
             if let firstNumber = quizViewModel.firstNumber, let secondNumber = quizViewModel.secondNumber,
-                quizViewModel.totalCounts > 0
+               quizViewModel.totalCounts > 0
             {
                 Text("\(firstNumber) + \(secondNumber)")
-                    .font(.title)
+                    .font(.custom("SongMyung-Regular", size: 66))
                     .padding(20)
             } else {
                 Text("Expression")
-                    .font(.title)
+                    .font(.custom("SongMyung-Regular", size: 46))
                     .padding(20)
             }
             
             Text("=")
+                .font(.custom("SongMyung-Regular", size: 46))
+
                 .padding(40)
             
             
             if let solution = quizViewModel.solution,
                quizViewModel.totalCounts > 0
-                {
+            {
                 if quizViewModel.showOrNot == 1{
                     Text("\(solution)")
-                        .font(.title)
+                        .font(.custom("SongMyung-Regular", size: 46))
                 }else{
                     Text("?")
-                        .font(.title)
+                        .font(.custom("SongMyung-Regular", size: 46))
                 }
             } else {
                 Text("Solution")
-                    .font(.title)
+                    .font(.custom("SongMyung-Regular", size: 46))
             }
+            
+            Spacer()
             
             Button(action: {
                 quizViewModel
                     .unfoldSum()
             }){
                 Text("Solve")
-                    .font(.title)
+                    .font(.custom("BreeSerif-Regular", size: 30))
                     .fontWeight(.bold)
                     .padding()
             }
+            .foregroundColor(.black)
+            .background(Color.green.cornerRadius(80))
             
             Spacer()
             
             HStack {
                 Spacer()
                 let totalCounts = quizViewModel.totalCounts
-                Text("\(totalCounts) Round\(totalCounts < 2 ? "" : "s")") .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                Text("\(totalCounts) Round\(totalCounts < 2 ? "" : "s")")                     .font(.custom("BreeSerif-Regular", size: 32))
+                    .fontWeight(.bold)
+                
+                Spacer()
+                
                 Button(action: {
                     quizViewModel.generateNumbers()
                 }) {
                     Text("Play \(quizViewModel.totalCounts <= 0 ? "" : "Again")")
-                        .font(.title)
+                        .font(.custom("BreeSerif-Regular", size: 32))
                         .fontWeight(.bold)
                 }
                 .padding()
+                .foregroundColor(.white)
+                .background(Color.brown.cornerRadius(49))
                 
                 Spacer()
             }
         }
         .padding()
-        .background(Color.brown)
+        .background(Color.yellow)
     }
 }
 
