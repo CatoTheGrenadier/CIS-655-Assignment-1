@@ -54,7 +54,7 @@ struct numberGame: View {
                     .unfoldSum()
             }){
                 Text("Solve")
-                    .font(.custom("BreeSerif-Regular", size: 30))
+                    .font(.custom("BreeSerif-Regular", size: 32))
                     .fontWeight(.bold)
                     .padding()
             }
